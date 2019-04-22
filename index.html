@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- event organise-->
-  <title>Org-Event</title>
+  <title>Common CSR Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Org-Event</a>
+      <a class="navbar-brand" href="#myPage">Common CSR Portal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -32,6 +32,7 @@
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#pricing">EVENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li><a href="login.html">LOG-IN</a></li>
       </ul>
     </div>
   </div>
@@ -42,9 +43,9 @@
   <p>Register your company and organise EVENTS in your city.</p> 
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+        <br><br>
+        <button type="button" class="btn btn-danger" onclick="location.href='register.html'"> Register</button>
       </div>
     </div>
   </form>
@@ -278,17 +279,6 @@
     </div>
   </div>
 </div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
-
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
