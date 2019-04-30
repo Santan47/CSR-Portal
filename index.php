@@ -32,7 +32,7 @@
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#pricing">EVENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="login.html">LOG-IN</a></li>
+        <li><a href="login.php">LOG-IN</a></li>
       </ul>
     </div>
   </div>
@@ -45,7 +45,7 @@
     <div class="input-group">
       <div class="input-group-btn">
         <br><br>
-        <button type="button" class="btn btn-danger" onclick="location.href='register.html'"> Register</button>
+        <button type="button" class="btn btn-danger" onclick="location.href='register.php'"> Register</button>
       </div>
     </div>
   </form>

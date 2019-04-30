@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <!-- event organise-->
@@ -22,15 +22,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Common CSR Portal</a>
+      <a class="navbar-brand" href="index.php">Common CSR Portal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#about">ABOUT</a></li>
-        <li><a href="index.html#services">SERVICES</a></li>
-        <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-        <li><a href="index.html#pricing">EVENTS</a></li>
-        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="index.php#about">ABOUT</a></li>
+        <li><a href="index.php#services">SERVICES</a></li>
+        <li><a href="index.php#portfolio">PORTFOLIO</a></li>
+        <li><a href="index.php#pricing">EVENTS</a></li>
+        <li><a href="index.php#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -43,12 +43,18 @@
       <div class="col-sm-4"></div>
       <div class="col-sm-4 fixit">
         <h3 class="text-center">LogIn</h3><br>
+
+        <form action="login_form.php" method="POST">
+        
         <h4>Email</h4>
         <input class="form-control input-lg" id="inputlg" type="text" placeholder="Email"><br>
         <h4>Password</h4>
         <input class="form-control input-lg" id="inputlg" type="Password" placeholder="Password"><br>
-        <button type="button" class="btn btn-danger center-block">Login</button><br>  
+        <button type="button" class="btn btn-danger center-block" onclick="">Login</button><br>  
         <input id="remember-me"type="checkbox"><label class="fixit">&nbsp;&nbsp;Remember me</label><br><br><br>
+        
+        </form>
+
       </div>
     <div class="col-sm-4"></div>
   </div>

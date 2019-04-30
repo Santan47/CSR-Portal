@@ -15,7 +15,7 @@
 </head>
 <body >
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,18 +38,17 @@
 </nav>
 <br><br>
 
-
   <div class="container">
-    <br><br><h3 class="good text-center">Common CSR Portal Registration</h3><br><h4 class="good text-center">For Company Registration Press Company Button Below.</h4><button type="button" class="btn btn-danger center-block" onclick="location.href='register.html'">Company registration</button><br>  
+    <br><br><h3 class="good text-center">Common CSR Portal Registration</h3><br><h4 class="good text-center">For Individual Registration Press Individual Button Below.</h4><button type="button" class="btn btn-danger center-block" onclick="location.href='individual_reg.php'">Individual</button><br>  
     <div class="row">
       
       <div class="col-sm-3"></div>
       <div class="col-sm-6 fixit">
-        <h3 class="text-center">Individual registration</h3><br>
-        <h4>Name*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" placeholder="Name"><br>
-        <h4>Address*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" placeholder="Address"><br>
+        <h3 class="text-center">Company registration</h3><br>
+        <h4>Company name*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" placeholder="Company"><br>
+        <h4>Company Address*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" placeholder="Company Address"><br>
         <div class="row">
         <div class="col-sm-5">
             <h4>State*</h4>
