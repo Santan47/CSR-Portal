@@ -22,10 +22,10 @@
         if ($db_found) {
 
          // INSERT INTO `individual_user` (`user_id`, `first_name`, `last_name`, `address`, `state`, `city`, `zip_code`, `country`, `contact`, `Email`, `password`) VALUES (NULL, '', '', '', '', '', '', '', '', '', '')
-          $query=mysqli_query($db_handle,"SELECT * FROM individual_user WHERE Email='$Username' AND password='$Password'");
+          $query=mysqli_query($db_handle,"SELECT * FROM company_user WHERE Email='$Username' AND password='$Password'");
           $count = mysqli_num_rows($query);
           if($count>0){
-              header('Location: index.php');
+              header('Location: user_profile.php');
           }
           else {
             echo"<script>alert('incorrect user name or password')</script>";

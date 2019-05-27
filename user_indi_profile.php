@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- event organise-->
-  <title>Common CSR Portal</title>
+  <title>individual Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -14,7 +14,9 @@
   
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+  <?php
+  session_start();
+?>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -27,29 +29,63 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#events">EVENTS</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#events">EVENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="login.php">LOG-IN</a></li>
+        <li><a href="log_out.php">LOG-OUT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Make-Events</h1> 
-  <p>Register your company and organise EVENTS in your city.</p> 
+  <h1>Welcome to your individual profile <?php echo $_SESSION["mail"]; ?> </h1> 
+  <p>Organise EVENTS in your city.</p> 
   <form>
     <div class="input-group">
       <div class="input-group-btn">
         <br><br>
-        <button type="button" class="btn btn-danger" onclick="location.href='register.php'"> Register</button>
+        <button type="button" class="btn btn-danger" onclick="location.href='event__indi_reg.php'">Make Event</button>
       </div>
     </div>
   </form>
 </div>
+
+<!-- Container (Pricing Section) -->
+<div id="events" class="container-fluid">
+  <div class="text-center">
+    <h2>Current Events</h2>
+    <h4>See the current upcomming events!</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Individual Events</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>view upcomming individual events</strong></p>
+          <button type="button" class="btn btn-danger btn-lg" onclick="location.href='indi_events.php'">Individual Events</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Company Events</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>view upcomming company events</strong></p>
+          <button type="button" class="btn btn-danger btn-lg" onclick="location.href='company_events.php'">Company Events</button>
+        </div>
+      </div>      
+    </div>       
+
+    </div>    
+  </div>
+</div>
+
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -120,86 +156,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"I AM AN INDIVIDUAL"<br><span>Through this portal we are trying to reach out to such people who want to contribute for<br> better society so please register with us and get immense opportunities to earn self-satisfaction.</span></h4>
-      </div>
-      <div class="item">
-        <h4>"I AM A COMPANY"<br><span>1. Innovation:CSR can help and guide the company’s research and development <br>efforts and lead to innovation of some path breaking and innovative products.</span></h4>
-      </div>
-       <div class="item">
-        <h4>"I AM A COMPANY"<br><span>2. Long-term thinking:CSR is an effort to look at the company’s <br>long-term interest and ensuring that the company’s future is sustainable.</span></h4>
-      </div>
-       <div class="item">
-        <h4>"I AM A COMPANY"<br><span>3. Employee engagement:Using CSR can help you engage with your employees in new <br>ways and give them an opportunity to feel proud of their organization and its activities.</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="events" class="container-fluid">
-  <div class="text-center">
-    <h2>Current Events</h2>
-    <h4>See the current upcomming events!</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-6 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Individual Events</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>view 5 upcomming individual events</strong></p>
-          <button type="button" class="btn btn-danger btn-lg" onclick="location.href='indi_events.php'">Individual Events</button>
-        </div>
-        <div class="panel-footer">
-          <h3>For more <br>Register yourself as a individual.</h3>
-          <button class="btn btn-lg" onclick="location.href='individual_reg.php'">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-6 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Company Events</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>view 5 upcomming company events</strong></p>
-          <button type="button" class="btn btn-danger btn-lg" onclick="location.href='company_events.php'">Company Events</button>
-        </div>
-        <div class="panel-footer">
-          <h3>For more <br>Register yourself as a company.</h3>
-          <button class="btn btn-lg" onclick="location.href='register.php'">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-
-    </div>    
-  </div>
-</div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">

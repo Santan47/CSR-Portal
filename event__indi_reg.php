@@ -54,39 +54,41 @@
 <br><br>
 
   <div class="container">
-    <br><br><h3 class="good text-center">Common CSR Portal Registration</h3><br><h4 class="good text-center">For Individual Registration Press Individual Button Below.</h4><button type="button" class="btn btn-danger center-block" onclick="location.href='individual_reg.php'">Individual</button><br>  
+    <br><br><h3 class="good text-center">Common CSR Portal Company Event Registration</h3><br>  
     <div class="row">
       
       <div class="col-sm-3"></div>
 
-<form action="company.php" method="POST">
+<form action="individual_event_db.php" method="POST">
 
       <div class="col-sm-6 fixit">
-        <h3 class="text-center">Company registration</h3><br>
-        <h4>Company name*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" name="name" placeholder="Company" required><br>
-        <h4>Company Address*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" name="c_add" placeholder="Address" required><br>
+        <h3 class="text-center">Event Registration</h3><br>
+        <h4>Individual Name*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" name="EOrg" placeholder="individual name" required><br>
+        <h4>Event Name*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" name="Ename" placeholder="Event" required><br>
+        <h4>Event Date & Time*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" name="Edate" placeholder="dd/mm/yyyy , hh:mm:ss" required><br>
+        <h4>Event Location*</h4>
+        <input class="form-control input-lg" id="inputlg" type="text" name="Eloc" placeholder="Location" required><br>
         <div class="row">
         <div class="col-sm-5">
             <h4>State*</h4>
-            <input class="form-control input-lg" id="inputlg" type="text" name="c_state" placeholder="State" required><br>
+            <input class="form-control input-lg" id="inputlg" type="text" name="Estate" placeholder="State" required><br>
             <h4>Zip Code*</h4>
-            <input class="form-control input-lg" id="inputlg" type="text" name="c_zip" placeholder="Zip Code" required><br>
+            <input class="form-control input-lg" id="inputlg" type="text" name="Ezip" placeholder="Zip Code" required><br>
         </div>
         <div class="col-sm-5">
             <h4>City*</h4>
-            <input class="form-control input-lg" id="inputlg" type="text" name="c_city" placeholder="City" required><br>
+            <input class="form-control input-lg" id="inputlg" type="text" name="Ecity" placeholder="City" required><br>
             <h4>Country*</h4>
-            <input class="form-control input-lg" id="inputlg" type="text" name="c_country" placeholder="Country" required><br>
+            <input class="form-control input-lg" id="inputlg" type="text" name="Ecountry" placeholder="Country" required><br>
         </div>
         </div>
         <h4>Contact Number*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" name="c_contact" placeholder="Contact Number" required><br>
+        <input class="form-control input-lg" id="inputlg" type="text" name="Econtact" placeholder="Contact Number" required><br>
         <h4>Email Address*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" name="c_email" placeholder="Email" required><br>
-        <h4>Password*</h4>
-        <input class="form-control input-lg" id="inputlg" type="text" name="c_password" placeholder="Password" required><br>
+        <input class="form-control input-lg" id="inputlg" type="text" name="Eemail" placeholder="Email" required><br>
         <button type="button submit" class="btn btn-danger center-block" value="submit">Register</button><br>
       </div>
 <!--onclick="location.href='login.php'"-->

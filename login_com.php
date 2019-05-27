@@ -57,20 +57,20 @@ else if (password==null || password=="")
 </nav>
 <br><br>
   <div class="container">
-    <br><br><h3 class="good text-center">Common CSR Portal Login</h3><br><h4 class="good text-center">For Company Login Press Company Button Below.</h4><button type="button" class="btn btn-danger center-block" onclick="location.href='login_com.php'">Company login</button><br><br>  
+    <br><br><h3 class="good text-center">Common CSR Portal Login</h3><br><h4 class="good text-center">For Individual Login Press Company Button Below.</h4><button type="button" class="btn btn-danger center-block" onclick="location.href='login.php'">Individual login</button><br><br>  
     <div class="row">
       
       <div class="col-sm-4"></div>
       <div class="col-sm-4 fixit">
 
-<form name="login" action="login_indi.php" method="POST">
+<form name="login" action="login_c.php" method="POST">
 
         <h3 class="text-center">LogIn</h3><br>
         <h4>Email</h4>
         <input class="form-control input-lg" id="inputlg" type="text" placeholder="email" name="email" required><br>
         <h4>Password</h4>
         <input class="form-control input-lg" id="inputlg" type="Password" placeholder="Password" name="password" required><br>
-        <button type="button submit" class="btn btn-danger center-block">Login</button><br>  
+        <button type="button submit" class="btn btn-danger center-block" >Login</button><br>  
         <input id="remember-me"type="checkbox"><label class="fixit">&nbsp;&nbsp;Remember me</label><br><br><br>
 
       </div>
